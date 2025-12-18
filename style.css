@@ -4,6 +4,20 @@
     --accent-color: #007bff;
 }
 
+button, .btn, .read-more-btn {
+    border-radius: 50px;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #007bff;
+    color: white;
+    transform: translateY(-2px);
+}
+
 .dark-theme {
     --primary-bg: #1a1a1a;
     --text-color: #f4f4f4;
