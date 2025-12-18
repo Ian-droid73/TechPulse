@@ -1,0 +1,63 @@
+:root {
+    --primary-bg: #ffffff;
+    --text-color: #333;
+    --accent-color: #007bff;
+}
+
+.dark-theme {
+    --primary-bg: #1a1a1a;
+    --text-color: #f4f4f4;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    margin: 0;
+    transition: 0.3s;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background: #222;
+    color: white;
+}
+
+.logo span { color: var(--accent-color); }
+
+.nav-links { list-style: none; display: flex; gap: 20px; }
+
+.hero {
+    text-align: center;
+    padding: 100px 10%;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://via.placeholder.com/1200x400');
+    color: white;
+    background-size: cover;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 50px 5%;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.extra-content {
+    display: none;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
