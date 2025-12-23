@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechPulse | Future Insights</title>
+    <title>TechPulse - Future Insights</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,40 +12,69 @@
         <nav>
             <div class="logo">Tech<span>Pulse</span></div>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#trends">Trends</a></li>
                 <li><a href="#about">About</a></li>
             </ul>
-            <button id="theme-toggle">Dark Mode</button>
+            <button id="darkMode">Dark Mode</button>
         </nav>
     </header>
 
     <main>
         <section class="hero">
+           <div class="slideshow">
+                <div class="mySlides fade" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/background1.jpg');"></div>
+                <div class="mySlides fade" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/background2.jpg');"></div>
+                <div class="mySlides fade" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/background3.jpg');"></div>
+                <div class="mySlides fade" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/background4.jpg');"></div>
+                <div class="mySlides fade" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/background5.jpg');"></div>
+           </div>
+
+        <div class="MainHeadingText">
             <h1>The Future of AI is Here</h1>
             <p>Discover how Artificial Intelligence is reshaping our daily lives and industries.</p>
-            <button class="btn" onclick="showAlert()">Explore More</button>
+            <button class="main-btn" onclick="popMessage()">Explore More</button>
+        </div>
         </section>
 
-        <section id="trends" class="info-grid">
-            <article class="card">
-                <h3>Quantum Computing</h3>
-                <p>Processing data at speeds never seen before.</p>
-                <button class="read-more-btn">Read Details</button>
-                <div class="extra-content">Quantum computers use qubits to solve problems that are impossible for classical computers.</div>
-            </article>
+        <section id="trends" class="tech-grid">
+    
+    <article class="infoBox">
+        <h3>Quantum Computing</h3>
+        <p>Processing data at speeds never seen before.</p>
+        <button class="toggle-text-btn">Read Details</button>
+        
+        <div class="hiddenInfo">
+            <p>Quantum computers use "qubits" which can exist in multiple states at once (superposition). 
+            This allows them to perform complex calculations millions of times faster than 
+            even the world's most powerful supercomputers today.</p>
+            <p>Major applications include breaking complex encryption, simulating new drug 
+            molecules, and optimizing global logistics chains.</p>
+        </div>
+    </article>
 
-            <article class="card">
-                <h3>Robotics</h3>
-                <p>Automation is moving from factories to our homes.</p>
-                <button class="read-more-btn">Read Details</button>
-                <div class="extra-content">From surgical assistants to delivery drones, robots are becoming ubiquitous.</div>
-            </article>
-        </section>
-    </main>
+    <article class="infoBox">
+        <h3>Robotics</h3>
+        <p>Automation is moving from factories to our homes.</p>
+        <button class="toggle-text-btn">Read Details</button>
+        
+        <div class="hiddenInfo">
+            <p>Modern robotics integrates advanced Artificial Intelligence to allow machines 
+            to learn from their environment. We are moving past basic "programmed" machines 
+            to autonomous systems that can navigate complex spaces.</p>
+            <p>This includes surgical robots with perfect precision, warehouse bots that 
+            organize inventory, and even social robots designed for elderly care.</p>
+        </div>
+    </article>
+
+</section>
+<section id="about" class="about-section">
+    <h2>About TechPulse</h2>
+    <p>TechPulse is your go-to source for the latest in technology trends and innovations. We provide insights into emerging technologies that are shaping our future.</p>
+</section>
 
     <footer>
-        <p>&copy; 2025 TechPulse Informational. All rights reserved.</p>
+        <p>&copy; 2025 TechPulse Informational Site. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
